@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AppIStrategies';
+  name: String;
+
+  person: { id: number, name: string }[] = [
+    { "id": 0, "name": "Xavier Méndez" },
+    { "id": 1, "name": "Pamela Nicole" }
+];
+
+
+
+  cDate: Date;
 }
