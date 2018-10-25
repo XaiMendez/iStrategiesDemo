@@ -36,11 +36,13 @@
 </p-table>
 
 
-  <form #form="">
+  <form #formUser="ngForm" novalidate>
     <div class="form-group">
       <label>name:</label>
       <input type="text" class="form-control" id="name" placeholder="name" [(ngModel)]="name" required>
       <span>{{ name }}</span>
+
+      <div class="invalid-feedback">required</div>
 
       <button type="button" pButton icon="far fa-save" labe="SAVE"></button>
     </div>
